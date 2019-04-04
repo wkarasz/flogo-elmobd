@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "type": "flogo:activity",
   "description": "ELM OBDII Get Device",
+  "title": "ELM OBDII Get Device",
   "ref": "github.com/wkarasz/elmobd2",
   "author": "William Karasz",
   "inputs":[
