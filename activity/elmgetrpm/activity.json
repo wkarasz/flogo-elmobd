@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "type": "flogo:activity",
   "description": "ELM OBDII Get RPMs",
+  "title": "ELM OBDII Get RPMs",
   "ref": "github.com/wkarasz/flogo-elmobd/activity/elmgetrpm",
   "author": "William Karasz",
   "inputs":[
