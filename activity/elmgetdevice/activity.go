@@ -10,6 +10,8 @@ import (
 // log is the default logger which we'll use to log
 var log = logger.GetLogger("activity-elm-getdevice")
 
+var serialPathP string
+
 // MyActivity is a stub for your Activity implementation
 type MyActivity struct {
 	metadata *activity.Metadata
@@ -27,19 +29,22 @@ func (a *MyActivity) Metadata() *activity.Metadata {
 
 // Eval implements activity.Activity.Eval
 func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
-
 	// do eval
 	device := context.GetInput("devicePath").(string)
-	log.Infof("Device path capture: [%s]", device)
-	serialPath := flag.String(
-		"serial",
-		device,
-		"Path to the serial device to use",
-	)
+	log.Infof("Device path capture [%s]", device)
+
+	if flag.Lookup("serial") == nil {
+		flag.StringVar(
+			&serialPathP,
+			"serial",
+			device,
+			"Path to the serial device to use",
+		)
+	} 
 
 	flag.Parse()
 	
-	dev, err := elmobd.NewTestDevice(*serialPath, false)
+	dev, err := elmobd.NewTestDevice(serialPathP, false)
 
 	if err != nil {
 		log.Infof("Failed to create new device: [%s]", err)
