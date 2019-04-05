@@ -39,7 +39,7 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 
 	flag.Parse()
 	
-	dev, err := elmobd.NewTestDevice(*serialPath, false)
+	dev, err := elmobd.NewDevice(*serialPath, false)
 
 	if err != nil {
 		log.Infof("Failed to create new device: [%s]", err)
@@ -55,6 +55,6 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 
 	log.Infof("Device has version [%s]", version)
 	context.SetOutput("result", "Device has version "+version)
-
+	dev = nil
 	return true, nil
 }
