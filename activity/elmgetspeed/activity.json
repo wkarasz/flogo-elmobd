@@ -1,0 +1,21 @@
+{
+  "name": "elmgetspeed",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Vehicle Speed",
+  "title": "ELM OBDII Get Vehicle Speed",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmgetspeed",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}
