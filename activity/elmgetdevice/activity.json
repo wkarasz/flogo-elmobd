@@ -4,7 +4,7 @@
   "type": "flogo:activity",
   "description": "ELM OBDII Get Device",
   "title": "ELM OBDII Get Device",
-  "ref": "github.com/wkarasz/elmobd2",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmgetdevice",
   "author": "William Karasz",
   "inputs":[
     {
