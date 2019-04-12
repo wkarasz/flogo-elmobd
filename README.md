@@ -1,5 +1,5 @@
 # flogo-elmobd
-flogo-elmobd is a library of Flogo activities designed for interfacing with a car's OBD-II system using ELM327 based devices.<br>
+flogo-elmobd is a library of Flogo activities designed for interfacing with a car's OBD-II system using ELM327 based devices.  The underlying libraries is based on the work from github.com/rzetterberg/elmobd.<br>
 <br>
 An ELM327 device is a requirement to use this library - this may be a OBDII USB-dongle or connection via Bluetooth.<br>
 <br>
