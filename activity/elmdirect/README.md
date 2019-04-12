@@ -41,8 +41,7 @@ Inputs and Outputs:
 | Input            | Description    |
 |:-----------------|:---------------|
 | devicePath       | The path to the ELM device on the host system; e.g. /dev/ttyUSB0 |
-| directCmd        | The raw command supported by the ELM chipset; e.g. AT@1
-https://www.elmelectronics.com/wp-content/uploads/2017/01/AT_Command_Table.pdf|
+| directCmd        | The raw command supported by the ELM chipset; e.g. AT@1<br>https://www.elmelectronics.com/wp-content/uploads/2017/01/AT_Command_Table.pdf|
 
 # Outputs
 | Output           | Description    |
