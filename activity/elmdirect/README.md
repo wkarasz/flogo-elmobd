@@ -4,12 +4,12 @@ Communicate with car's OBD-II system using ELM327 based devices.
 Send raw/direct ELM commands to ELM327 chipset.
 
 ## Installation
-
+Command for Flogo CLI:
 ```console
 flogo install github.com/wkarasz/flogo-elmobd/activity/elmdirect
 ```
 
-Link for flogo web:
+Link for Flogo Web UI:
 ```console
 https://github.com/wkarasz/flogo-elmobd/activity/elmdirect
 ```
@@ -46,4 +46,4 @@ Inputs and Outputs:
 # Outputs
 | Output           | Description    |
 |:-----------------|:---------------|
-| result           | The result will contain a string response to the command or will contain an error message |
+| result           | The result will contain a string response of the command or will contain an error message |
