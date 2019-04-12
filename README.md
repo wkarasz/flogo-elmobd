@@ -6,9 +6,9 @@ An ELM327 device is a requirement to use this library - this may be a OBDII USB-
 The library consists of pre-cast functions for the most common OBD commands and a direct device command function for everything else not yet implemented.
 <br>
 * Direct device command
-  * [activity/elmdirect](https://github.com/wkarasz/flogo-elmobd/tree/master/activity/elmdirect)
+  * [activity/elmdirect](activity/elmdirect/README.md)
 * Pre-cast functions
-  * [activity/elmcoolanttemperature](github.com/wkarasz/flogo-elmobd/tree/master/activity/elmcoolanttemperature)
+  * [activity/elmcoolanttemperature](activity/elmcoolanttemperature/README.md)
   * [activity/elmdistsincedtcclear](github.com/wkarasz/flogo-elmobd/activity/elmdistsincedtcclear)
   * [activity/elmengineload](github.com/wkarasz/flogo-elmobd/activity/elmengineload)
   * [activity/elmenginerpm](github.com/wkarasz/flogo-elmobd/activity/elmenginerpm)
