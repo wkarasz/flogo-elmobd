@@ -1,0 +1,21 @@
+{
+  "name": "elmintakemanifoldpressure",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Intake Manifold Pressure",
+  "title": "ELM OBDII Get Intake Manifold Pressure",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmintakemanifoldpressure",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

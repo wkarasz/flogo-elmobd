@@ -1,0 +1,21 @@
+{
+  "name": "elmthrottleposition",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Throttle Position",
+  "title": "ELM OBDII Get Throttle Position",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmthrottleposition",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

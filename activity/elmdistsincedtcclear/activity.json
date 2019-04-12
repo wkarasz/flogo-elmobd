@@ -1,0 +1,21 @@
+{
+  "name": "elmdistsincedtcclear",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Dist Since DTC Clear",
+  "title": "ELM OBDII Get Dist Since DTC Clear",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmdistsincedtcclear",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

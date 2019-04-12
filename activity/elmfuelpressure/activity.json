@@ -1,0 +1,21 @@
+{
+  "name": "elmfuelpressure",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Fuel Pressure",
+  "title": "ELM OBDII Get Fuel Pressure",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmfuelpressure",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

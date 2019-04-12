@@ -1,0 +1,21 @@
+{
+  "name": "elmintakeairtemperature",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Intake Air Temperature",
+  "title": "ELM OBDII Get Intake Air Temperature",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmintakeairtemperature",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

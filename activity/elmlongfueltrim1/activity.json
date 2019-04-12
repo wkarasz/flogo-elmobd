@@ -1,0 +1,21 @@
+{
+  "name": "elmlongfueltrim1",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Long Fuel Trim 1",
+  "title": "ELM OBDII Get Long Fuel Trim 1",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmlongfueltrim1",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

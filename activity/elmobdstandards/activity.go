@@ -1,4 +1,4 @@
-package elmgetspeed
+package elmobdstandards
 
 import (
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
@@ -8,7 +8,7 @@ import (
 )
 
 // log is the default logger which we'll use to log
-var log = logger.GetLogger("activity-elm-getrpm")
+var log = logger.GetLogger("activity-elm-obdstandards")
 
 // String to hold the pointer for serial flag object
 var serialPathP string
@@ -52,15 +52,15 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
                 return
         }
 
-        veh, err := dev.RunOBDCommand(elmobd.NewVehicleSpeed())
+        elmObj, err := dev.RunOBDCommand(elmobd.NewOBDStandards())
 
 	if err != nil {
-                log.Infof("Failed to get vehicle speed [%s]", err)
+                log.Infof("Failed to get OBD standards [%s]", err)
                 return
         }
 
-        log.Infof("Vehicle speed [%s]", veh.ValueAsLit())
-        context.SetOutput("result", veh.ValueAsLit())
+        log.Infof("OBD standard is [%s]", elmObj.ValueAsLit())
+        context.SetOutput("result", elmObj.ValueAsLit())
         dev = nil
 
 	return true, nil

@@ -1,0 +1,21 @@
+{
+  "name": "elmengineload",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Engine Load",
+  "title": "ELM OBDII Get Engine Load",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmengineload",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

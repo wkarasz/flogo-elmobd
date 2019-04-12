@@ -1,0 +1,21 @@
+{
+  "name": "elmmonitorstatus",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Monitor Status",
+  "title": "ELM OBDII Get Monitor Status",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmmonitorstatus",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

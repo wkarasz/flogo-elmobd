@@ -1,0 +1,21 @@
+{
+  "name": "elmcoolanttemperature",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Coolant Temperature",
+  "title": "ELM OBDII Get Coolant Temperature",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmcoolanttemperature",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

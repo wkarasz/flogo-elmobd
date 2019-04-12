@@ -1,4 +1,4 @@
-package elmgetspeed
+package elmmonitorstatus
 
 import (
 	"io/ioutil"
@@ -54,5 +54,5 @@ func TestEval(t *testing.T) {
 
 	//check result attr
 	result := tc.GetOutput("result")
-	assert.Equal(t, result, "75")
+	assert.Equal(t, result, "{\"mil_active\": true, \"dts_amount\": 127")
 }

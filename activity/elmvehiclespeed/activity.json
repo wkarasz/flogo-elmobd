@@ -1,10 +1,10 @@
 {
-  "name": "elmgetrpm",
+  "name": "elmvehiclespeed",
   "version": "0.0.1",
   "type": "flogo:activity",
-  "description": "ELM OBDII Get RPMs",
-  "title": "ELM OBDII Get RPMs",
-  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmgetrpm",
+  "description": "ELM OBDII Get Vehicle Speed",
+  "title": "ELM OBDII Get Vehicle Speed",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmvehiclespeed",
   "author": "William Karasz",
   "inputs":[
     {
@@ -16,7 +16,6 @@
     {
       "name": "result",
       "type": "string"
-
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "name": "elmmafairflowrate",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get MAF Airflow Rate",
+  "title": "ELM OBDII Get MAF Airflow Rate",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmmafairflowrate",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

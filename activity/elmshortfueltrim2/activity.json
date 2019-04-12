@@ -1,0 +1,21 @@
+{
+  "name": "elmshortfueltrim2",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Short Fuel Trim 2",
+  "title": "ELM OBDII Get Short Fuel Trim 2",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmshortfueltrim2",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

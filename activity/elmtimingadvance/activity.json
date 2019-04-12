@@ -1,0 +1,21 @@
+{
+  "name": "elmtimingadvance",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Timing Advance",
+  "title": "ELM OBDII Get Timing Advance",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmtimingadvance",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

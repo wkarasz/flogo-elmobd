@@ -1,0 +1,21 @@
+{
+  "name": "elmfuel",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get Fuel",
+  "title": "ELM OBDII Get Fuel",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmfuel",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+    }
+  ]
+}

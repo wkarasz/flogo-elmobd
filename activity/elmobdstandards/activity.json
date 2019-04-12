@@ -1,10 +1,10 @@
 {
-  "name": "elmgetspeed",
+  "name": "elmobdstandards",
   "version": "0.0.1",
   "type": "flogo:activity",
-  "description": "ELM OBDII Get Vehicle Speed",
-  "title": "ELM OBDII Get Vehicle Speed",
-  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmgetspeed",
+  "description": "ELM OBDII Get OBD Standards",
+  "title": "ELM OBDII Get OBD Standards",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmobdstandards",
   "author": "William Karasz",
   "inputs":[
     {

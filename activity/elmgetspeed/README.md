@@ -1,2 +1,0 @@
-
-# 	elmgetspeed - Activity

@@ -1,0 +1,22 @@
+{
+  "name": "elmenginerpm",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "ELM OBDII Get RPMs",
+  "title": "ELM OBDII Get RPMs",
+  "ref": "github.com/wkarasz/flogo-elmobd/activity/elmenginerpm",
+  "author": "William Karasz",
+  "inputs":[
+    {
+      "name": "devicePath",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "result",
+      "type": "string"
+
+    }
+  ]
+}

@@ -1,14 +1,14 @@
-package elmgetrpm
+package elmfuelpressure
 
 import (
 	"github.com/TIBCOSoftware/flogo-lib/core/activity"
 	"github.com/TIBCOSoftware/flogo-lib/logger"
-	"github.com/wkarasz/elmobd"
-	"flag"
+        "github.com/wkarasz/elmobd"
+        "flag"
 )
 
 // log is the default logger which we'll use to log
-var log = logger.GetLogger("activity-elm-getrpm")
+var log = logger.GetLogger("activity-elm-FuelPressure")
 
 // String to hold the pointer for serial flag object
 var serialPathP string
@@ -33,34 +33,35 @@ func (a *MyActivity) Eval(context activity.Context) (done bool, err error)  {
 
 	// do eval
 	device := context.GetInput("devicePath").(string)
-	log.Infof("Device path capture [%s]", device)
+        log.Infof("Device path capture [%s]", device)
 
-	if flag.Lookup("serial") == nil {
-		flag.StringVar(
-			&serialPathP,
-			"serial",
-			device,
+        if flag.Lookup("serial") == nil {
+                flag.StringVar(
+                        &serialPathP,
+                        "serial",
+                        device,
 			"Path to the serial device to use",
-		)
-	}
-	flag.Parse()
+                )
+        }
+        flag.Parse()
 
-	dev, err := elmobd.NewTestDevice(serialPathP, false)
+        dev, err := elmobd.NewTestDevice(serialPathP, false)
 
         if err != nil {
                 log.Infof("Failed to create new device [%s]", err)
                 return
         }
 
-        rpm, err := dev.RunOBDCommand(elmobd.NewEngineRPM())
+        elmObj, err := dev.RunOBDCommand(elmobd.NewFuelPressure())
 
-        if err != nil {
-                log.Infof("Failed to get rpm [%s]", err)
+	if err != nil {
+                log.Infof("Failed to get fuel pressure [%s]", err)
                 return
         }
 
-        log.Infof("Engine spins at [%s]", rpm.ValueAsLit())
-        context.SetOutput("result", rpm.ValueAsLit())
+        log.Infof("Fuel pressure is [%s]", elmObj.ValueAsLit())
+        context.SetOutput("result", elmObj.ValueAsLit())
         dev = nil
+
 	return true, nil
 }
