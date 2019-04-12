@@ -9,10 +9,12 @@
   "inputs":[
     {
       "name": "devicePath",
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     { "name": "directCmd",
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   ],
   "outputs": [

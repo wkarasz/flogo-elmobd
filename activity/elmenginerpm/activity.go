@@ -8,7 +8,7 @@ import (
 )
 
 // log is the default logger which we'll use to log
-var log = logger.GetLogger("activity-elm-EngineRPM")
+var log = logger.GetLogger("activity-elm-enginerpm")
 
 // String to hold the pointer for serial flag object
 var serialPathP string
