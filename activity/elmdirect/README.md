@@ -5,7 +5,7 @@ Send raw/direct ELM commands to ELM327 based devices.
 
 ## Installation
 
-```toml
+```console
 flogo install github.com/wkarasz/flogo-elmobd/activity/elmdirect
 ```
 
