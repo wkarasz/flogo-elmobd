@@ -9,7 +9,8 @@
   "inputs":[
     {
       "name": "devicePath",
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   ],
   "outputs": [
